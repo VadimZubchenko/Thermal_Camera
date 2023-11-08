@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lämpökamera</string>
+
+    <string name="msgLowTmprt">Näyttää siltä että ihosi on kylmä.\nTulitko juuri ulkoa?\n\n
+        Suorita mittaus 10 minuutin oleskelun jälkeen sisätiloissa uudestaan.\n\n
+        Huomaa myös että tämä laite on vielä koekäytössä ja saattaa antaa vääriä mittaustuloksia.</string>
+    <string name="msgNormTmprt">Näyttää siltä, että kehosi lämpötila on normaaleissa rajoissa.\n\n\nSovellus on testitilassa eikä sen tulosta voida käyttää lääketieteellisenä raporttina.</string>
+    <string name="msgHightTmprt">Näyttää siltä että lämpötilasi saattaa olla kohonnut.\n\nHuomaa kuitenkin että tämä laite on vielä koekäytössä ja saattaa antaa vääriä mittaustuloksia.</string>
+
+    <string name="title">LÄMPÖKAMERA</string>
+    <string name="start_layout_info_text">Peitä ovaalin alue naamallasi aloittaaksesi lämpötilasi arvioinnin.\n\nVideokuvaa ei tallenneta mihinkään.</string>
+    <string name="start_layout_come_closer">Tule hieman lähemmäksi</string>
+    <string name="start_layout_hold_position">Odota hetki...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hei tyhjä fragmentti</string>
+    <string name="qr_instruction">Skannaa QR-koodi puhelimen kameralla antaaksesi palautetta kokemuksestasi.</string>
+    <string name="FeedBack">Kuulemme innolla kokemuksestanne tuotteemme parissa.</string>
+
+    <!-- PREFERENCE KEYS -->
+    <string name="preference_min_filter">PREFERENCE_MIN_FILTER</string>
+    <string name="preference_max_filter">PREFERENCE_MAX_FILTER</string>
+    <string name="preference_measure_distance">PREFERENCE_MEASURE_DISTANCE</string>
+    <string name="preference_oval_width">PREFERENCE_OVAL_WIDTH</string>
+    <string name="preference_oval_height">PREFERENCE_OVAL_HEIGHT</string>
+    <string name="preference_oval_pos_from_top">PREFERENCE_OVAL_POS_FROM_TOP</string>
+
+    <!-- Intro_fragment's text -->
+    <string name="instruction">Jos haluat aloittaa sovelluksen käytön, niin astu vain hieman lähemmäksi. Tämän jälkeen seuraa ruudulle ilmestyviä ohjeita.\n\nJos olet juuri tullut ulkoa sisälle, odota vähintään 10 minuuttia sisätiloissa\nennen mittaamista.</string>
+    <string name="information_about_App">Tietoa sovelluksesta</string>
+    <string name="idea_of_App">Sovelluksen idea on arvioida käyttäjän lämpöä. Mittaustulos ei ole absoluuttinen vaan suuntaa-antava.</string>
+    <string name="about_thermalCamera">Mittaukseen käytetään lämpökameraa, joka on sijoitettu tabletin yläosaan.</string>
+    <string name="who_developed">Sovelluskehittäjät:Toni Hämäläinen,\nMiika Ponkilainen, Eero Tuure,\nVadim Zubchenko, Jukka Övermark.\nSovellus on osa Metropolian innovaatioprojekteja ja on toteutettu yhteistyössä LeViteZer Oy:n kanssa.</string>
+    <string name="your_distance">Etäisyytesi</string>
+
+    <!-- Graph text -->
+    <string name="prev_measurements">Mittaukset</string>
+    <string name="user_measurement">Sinä</string>
+    <string name="vertical_temp_text">L\nä\nm\np\nö\nt\ni\nl\na</string>
+    <string name="high_temp_line_text">Korkean raja</string>
+    <string name="graph_title_text"><u>Aiemmat mittaukset</u></string>
+    
+    <!-- ExitAutoDialogFragment text -->
+    <string name="wrong_password_msg">Väärä salasana</string>
+    <string name="no_password_msg">Salasanaa ei syötetty</string>
+    <string name="enter_password_to_exit_msg">Anna salasana poistuaksesi automaattitilasta.</string>
+    <string name="passwordHint">Salasana</string>
+    <string name="the_private_keyboard_qr_code">Skannaa QR-koodi puhelimen kameralla saadaksesi kuvallisen vierailijakortin.</string>
+
+    <string name="device_start_info">Odotetaan lämpökameran vakautumista</string>
+
+    <!-- Private Keyboard  -->
+    <string name="first_name">Kokonimi</string>
+    <string name="last_name">Yrityksen nimi</string>
+    <string name="phone_number">Puh. numero</string>
+    <string name="email_address">Sähköposti</string>
+    <string name="gender">Sukupuoli</string>
+    <string name="radio_male">Mies</string>
+    <string name="radio_female">Nainen</string>
+    <string name="qr_code">QR koodi</string>
+    <string name="tilt_adjustment">Kallistuksen säätö</string>
+    <string name="angle">Kulma: 0</string>
+    <string name="take_picture">OTA KUVA</string>
+    <string name="inform">Vain YKSI yhteys kerrallaan</string>
+    <string name="host_name">Isännän nimi</string>
+    <string name="name_form">Nimi</string>
+    <string name="smooths_the_movement">Tasoittaa liikettä</string>
+    <string name="host">Isäntä:</string>
+    <string name="kim_janson">Kim Janson</string>
+    <string name="levitezer">LEVITEZER</string>
+    <string name="visitDate">22/11/2020</string>
+    <string name="visitor">VIERAILIJA</string>
+    <string name="name">Nimi:</string>
+    <string name="valid_thru">Voimassa:</string>
+
+</resources>

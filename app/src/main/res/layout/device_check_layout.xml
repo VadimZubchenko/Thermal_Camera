@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_check_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_red_to_blue_list">
+
+    <TextView
+        android:id="@+id/mTextField2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#3D54C6"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="10"
+        android:text="@string/device_start_info"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <TextView
+        android:id="@+id/mTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#3D54C6"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="10"
+        android:text="30:00"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.heatcam.MeasurementApp.Fragments.DeviceCheck.CircularProgressBar
+        android:id="@+id/timeProgressBar"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="35"
+        app:progressBarThickness="8dp" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeProgressBar"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/pkbTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pkbTest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/skipButton"
+        app:layout_constraintTop_toBottomOf="@+id/timeProgressBar"
+        app:layout_constraintVertical_bias="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MeasurementApp.ThermalCamera.SerialListeners.LeptonCamera">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/recordBtn"
+        app:layout_constraintDimensionRatio="16:12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_data_spinner"
+        app:srcCompat="@drawable/noimage" />
+
+    <Button
+        android:id="@+id/testBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        app:layout_constraintBottom_toBottomOf="@+id/scanBtn"
+        app:layout_constraintEnd_toStartOf="@+id/analysisBtn"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toEndOf="@+id/scanBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cameraLayoutBtn" />
+
+    <Button
+        android:id="@+id/videoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Video"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraLayoutBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cameraLayoutBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/analysisBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Analysis"
+        app:layout_constraintBottom_toBottomOf="@+id/testBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="314dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanBtn"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Scan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoBtn" />
+
+    <ToggleButton
+        android:id="@+id/recordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/test_data_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cameraLayoutBtn"
+        android:layout_width="119dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="Camera Layout"
+        app:layout_constraintBottom_toBottomOf="@+id/butTemp"
+        app:layout_constraintStart_toEndOf="@+id/videoBtn"
+        app:layout_constraintTop_toTopOf="@+id/butTemp" />
+
+    <Button
+        android:id="@+id/butTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:text="user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logs_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Logs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recordBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

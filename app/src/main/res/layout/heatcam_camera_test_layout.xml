@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_test_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="60dp"
+    android:paddingEnd="60dp">
+
+    <SeekBar
+        android:id="@+id/seekBarCamMode"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:max="4"
+        android:progress="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpeed" />
+
+    <ImageView
+        android:id="@+id/camera_test_view"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/noimage" />
+
+    <TextView
+        android:id="@+id/camera_max_raw_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="maxValue"
+        app:layout_constraintEnd_toEndOf="@+id/camera_setting_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/camera_setting_spinner" />
+
+    <TextView
+        android:id="@+id/camera_min_raw_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="minValue"
+        app:layout_constraintEnd_toEndOf="@+id/camera_max_raw_value"
+        app:layout_constraintTop_toBottomOf="@+id/camera_max_raw_value" />
+
+    <Spinner
+        android:id="@+id/camera_setting_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/camera_test_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera_status_text" />
+
+    <Button
+        android:id="@+id/camera_test_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/camera_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Disconnected"
+        app:layout_constraintEnd_toEndOf="@+id/camera_setting_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/camera_test_view" />
+
+    <EditText
+        android:id="@+id/edit_max_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_max_raw_value"
+        app:layout_constraintStart_toEndOf="@+id/camera_max_raw_value" />
+
+    <EditText
+        android:id="@+id/edit_min_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_min_raw_value"
+        app:layout_constraintStart_toEndOf="@+id/camera_min_raw_value" />
+
+    <TextView
+        android:id="@+id/textAzimuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="32dp"
+        android:text="Azimuth: "
+        app:layout_constraintStart_toEndOf="@+id/camera_status_text"
+        app:layout_constraintTop_toBottomOf="@+id/camera_test_view" />
+
+    <TextView
+        android:id="@+id/textPitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:text="Pitch: "
+        app:layout_constraintEnd_toEndOf="@+id/textAzimuth"
+        app:layout_constraintTop_toBottomOf="@+id/textAzimuth" />
+
+    <TextView
+        android:id="@+id/textRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Roll: "
+        app:layout_constraintEnd_toEndOf="@+id/textPitch"
+        app:layout_constraintTop_toBottomOf="@+id/textPitch" />
+
+    <TextView
+        android:id="@+id/kerroinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/facebounds"
+        app:layout_constraintTop_toBottomOf="@+id/edit_min_filter" />
+
+    <Button
+        android:id="@+id/oikea"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="O"
+        app:layout_constraintStart_toEndOf="@+id/ylos"
+        app:layout_constraintTop_toBottomOf="@+id/ylos" />
+
+    <Button
+        android:id="@+id/ylos"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:text="Y"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera_test_view" />
+
+    <Button
+        android:id="@+id/alas"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="A"
+        app:layout_constraintStart_toStartOf="@+id/vasen"
+        app:layout_constraintTop_toBottomOf="@+id/ylos" />
+
+    <Button
+        android:id="@+id/scaleplus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/alas"
+        app:layout_constraintTop_toBottomOf="@+id/alas" />
+
+    <Button
+        android:id="@+id/scalemiinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scaleplus"
+        app:layout_constraintTop_toBottomOf="@+id/scaleplus"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <Button
+        android:id="@+id/vasen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="V"
+        app:layout_constraintEnd_toStartOf="@+id/ylos"
+        app:layout_constraintTop_toBottomOf="@+id/ylos" />
+
+    <TextView
+        android:id="@+id/resot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/kerroinText"
+        app:layout_constraintTop_toBottomOf="@+id/kerroinText" />
+
+    <CheckBox
+        android:id="@+id/facebounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:checked="true"
+        android:text="Face Bounds"
+        app:layout_constraintStart_toStartOf="@+id/transparency"
+        app:layout_constraintTop_toBottomOf="@+id/transparency" />
+
+    <CheckBox
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Temperature"
+        app:layout_constraintStart_toStartOf="@+id/smooth"
+        app:layout_constraintTop_toBottomOf="@+id/smooth" />
+
+    <CheckBox
+        android:id="@+id/smooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Smooth pixels"
+        app:layout_constraintStart_toStartOf="@+id/facebounds"
+        app:layout_constraintTop_toBottomOf="@+id/facebounds" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:text="Angle"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:max="73"
+        android:progress="45"
+        android:rotation="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scalemiinus" />
+
+    <TextView
+        android:id="@+id/textTelemetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/kerroinText"
+        app:layout_constraintTop_toBottomOf="@+id/edit_min_filter" />
+
+    <SeekBar
+        android:id="@+id/seekBarSpeed"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:max="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:text="Speed"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarSpeed" />
+
+    <TextView
+        android:id="@+id/textViewCamMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:text="Mode"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarCamMode"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarCamMode" />
+
+    <SeekBar
+        android:id="@+id/transparency"
+        android:layout_width="123dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:max="255"
+        android:progress="200"
+        app:layout_constraintStart_toEndOf="@+id/oikea"
+        app:layout_constraintTop_toBottomOf="@+id/oikea" />
+
+    <TextView
+        android:id="@+id/transparencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Transparency"
+        app:layout_constraintBottom_toTopOf="@+id/transparency"
+        app:layout_constraintEnd_toEndOf="@+id/transparency" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

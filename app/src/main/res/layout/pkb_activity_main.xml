@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@drawable/bg_red_to_blue_list"
+    tools:context=".PrivateKeyboard.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/visitorCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/visitorImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="#050505"
+                    />
+
+                <TextView
+                    android:id="@+id/visitorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/name_form"
+                    android:textColor="#050505" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valid_thru"
+                    android:textColor="#050505" />
+
+                <TextView
+                    android:id="@+id/visitDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visitDate"
+                    android:textColor="#050505" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="#2196F3"
+            android:gravity="center"
+            android:text="@string/visitor"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FAFAFA"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/levitezer_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                   <!-- <TextView
+                        android:id="@+id/companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/levitezer"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="18sp" />
+-->
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smooths_the_movement"
+                        android:textColor="#FAFAFA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/host" />
+
+                <TextView
+                    android:id="@+id/hostName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kim_janson" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="411dp"
+            android:layout_height="323dp"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:tag="hidden">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/inform"
+                    android:textColor="#EA0707"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="wVisible">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/first_name"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/fullNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/first_name"
+                    android:ems="10"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="wVisible">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/last_name"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/companyNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/last_name"
+                    android:ems="10"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="wVisible">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/host_name"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/hostNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/last_name"
+                    android:ems="10"
+                    android:hint="@string/host_name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:tag="wVisible">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView3"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="@string/phone_number" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextPersonName3"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:autofillHints="@string/phone_number"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:hint="@string/phone_number"-->
+            <!--                    android:inputType="phone" />-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="wVisible">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/email_address"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/emailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/email_address"
+                    android:ems="10"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FAFAFA" />
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:tag="wVisible">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView5"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/gender" />-->
+
+            <!--&lt;!&ndash;                <RadioGroup&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:id="@+id/radioSex"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:tag="sex">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                    <RadioButton&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:id="@+id/radioMale"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:text="@string/radio_male" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                    <RadioButton&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:id="@+id/radioFemale"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:text="@string/radio_female" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                </RadioGroup>&ndash;&gt;-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:tag="hidden">
+
+                <TextView
+                    android:id="@+id/seekBarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/tilt_adjustment"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/tiltValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/angle"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:tag="hidden">
+
+                <Button
+                    android:id="@+id/buttonCam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="@string/take_picture"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/imageButton"-->
+    <!--        android:layout_width="160dp"-->
+    <!--        android:layout_height="160dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/qrImage"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:srcCompat="@drawable/hiiii"-->
+    <!--        android:scaleType="fitXY"/>-->
+
+    <ImageView
+        android:id="@+id/takenImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/hiiii"
+        android:scaleType="fitXY"
+        android:scaleX="0.35"
+        android:scaleY="0.35"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/qrImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@string/qr_code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/sendEmailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send form"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

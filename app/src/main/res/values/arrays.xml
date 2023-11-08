@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- arrays for testing preferences -->
+    <array name="labels">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+    </array>
+
+    <array name="values">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+    </array>
+    <array name="multi_lang_labels">
+        <item>suomi</item>
+        <item>english</item>
+        <item>русский</item>
+    </array>
+
+    <array name="multi_select_values">
+        <item>multi1</item>
+        <item>multi2</item>
+        <item>multi3</item>
+    </array>
+</resources>

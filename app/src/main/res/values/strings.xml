@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Heatcam</string>
+    <string name="msgLowTmprt">It looks like your body temperature is lower than the average body temperature.\n\n\nIn spite of receiving the result, you should not worry because the application is in test mode and its result cannot be used as a medical report.</string>
+    <string name="msgNormTmprt">It looks like your body temperature is within normal limits.\n\n\nThe application is in test mode and its result cannot be used as a medical report.</string>
+    <string name="msgHightTmprt">It looks like your body temperature is higher than the average body temperature.\n\n\nIn spite of receiving the result, you should not worry because the application is in test mode and its result cannot be used as a medical report.</string>
+    <string name="title">THERMAL CAMERA</string>
+    <string name="start_layout_info_text">Cover the oval area with your face to begin evaluating your temperature.\n\nThe video will not be saved anywhere.</string>
+    <string name="start_layout_come_closer">Step a little closer</string>
+    <string name="start_layout_hold_position">Now hold...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="qr_instruction">Scan the QR code with your phone camera to provide feedback on your experience</string>
+    <string name="FeedBack">We look forward to hearing from you about our product.</string>
+
+    <!-- PREFERENCE KEYS -->
+    <string name="preference_min_filter">PREFERENCE_MIN_FILTER</string>
+    <string name="preference_max_filter">PREFERENCE_MAX_FILTER</string>
+    <string name="preference_measure_distance">PREFERENCE_MEASURE_DISTANCE</string>
+    <string name="preference_oval_width">PREFERENCE_OVAL_WIDTH</string>
+    <string name="preference_oval_height">PREFERENCE_OVAL_HEIGHT</string>
+    <string name="preference_oval_pos_from_top">PREFERENCE_OVAL_POS_FROM_TOP</string>
+
+    <!-- Intro_fragment's text -->
+    <string name="instruction">If you want to get your temperature measured, just step a little closer. Then follow the instructions on the screen.\n\nIf you just came from outside, please wait for at least 10 minutes indoors before measuring.</string>
+    <string name="information_about_App">About the Application</string>
+    <string name="idea_of_App">The idea of the app is to estimate the user\'s temperature. The measured result is not absolute but indicative.</string>
+    <string name="about_thermalCamera">There\'s a thermal camera at the top of the tablet which is used for the measurement.</string>
+    <string name="who_developed"> Developed by Toni Hämäläinen,\nMiika Ponkilainen, Eero Tuure,\nVadim Zubchenko, Jukka Övermark.\nThe application is a part of Metropolia\'s innovation projects and has been implemented in cooperation with \nLeViteZer.\n </string>
+    <string name="your_distance">Your Distance</string>
+
+    <!-- Graph text -->
+    <string name="prev_measurements">Measurements</string>
+    <string name="user_measurement">You</string>
+    <string name="vertical_temp_text">T\ne\nm\np\ne\nr\na\nt\nu\nr\ne</string>
+    <string name="high_temp_line_text">High temp</string>
+    <string name="graph_title_text"><u>Previous measurements</u></string>
+    
+    <!-- ExitAutoDialogFragment text -->
+    <string name="wrong_password_msg">Wrong password</string>
+    <string name="no_password_msg">Password was not entered</string>
+    <string name="enter_password_to_exit_msg">Enter password to exit auto mode.</string>
+    <string name="passwordHint">password</string>
+    <string name="the_private_keyboard_qr_code">Scan the QR code with your phone\'s camera to get a Visitor\'s Badge.\n\n</string>
+
+    <string name="device_start_info">Waiting for heat sensor to stabilize</string>
+
+
+    <!-- Private Keyboard  -->
+    <string name="first_name">Full name</string>
+    <string name="last_name">Company name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_address">Email Address</string>
+    <string name="gender">Gender</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="qr_code">QR code</string>
+    <string name="tilt_adjustment">Tilt adjustment</string>
+    <string name="angle">Angle: 0</string>
+    <string name="take_picture">TAKE PICTURE</string>
+    <string name="inform">Allow only ONE connection at a time </string>
+    <string name="host_name">Host_name</string>
+    <string name="name">Name:</string>
+    <string name="name_form">Name</string>
+    <string name="valid_thru">Valid thru:</string>
+    <string name="visitDate">22/11/2020</string>
+    <string name="visitor">VISITOR</string>
+    <string name="levitezer">LEVITEZER</string>
+    <string name="smooths_the_movement">Smooths the movement</string>
+    <string name="host">Host:</string>
+    <string name="kim_janson">Kim Janson</string>
+
+</resources>

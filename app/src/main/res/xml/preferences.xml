@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <SwitchPreference
+        app:key="enablesomthing"
+        app:title="Enable something"/>
+
+    <EditTextPreference
+        app:key="@string/preference_measure_distance"
+        app:title="Preferred measure distance"
+        android:defaultValue="250"
+        android:inputType="number"
+        android:digits="0123456789"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        app:key="@string/preference_oval_width"
+        app:title="Oval width"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="950"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        app:key="@string/preference_oval_height"
+        app:title="Oval height"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="1450"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        app:key="@string/preference_oval_pos_from_top"
+        app:title="Oval position from top"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="80"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        app:key="PREFERENCE_TILT_CORRECTION_DELAY"
+        app:title="Tilt correction delay"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="1000"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="PREFERENCE_MEASURE_START_MIN_DISTANCE"
+        app:title="Distance requirement for measure start fragment"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="500"
+        app:useSimpleSummaryProvider="true" />
+
+    <!-- how close the user's face has to be to cancel the switch from ResultFragment to IntroFragment -->
+    <EditTextPreference
+        app:key="PREFERENCE_RESULT_IDLE_CANCEL_DISTANCE"
+        app:title="Dist to stop idle executor in result fragment"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="600"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="PREFERENCE_SECONDS_TO_SWITCH_INTRO_MEASUREMENT"
+        app:title="Time in seconds after when to change to IntroFrag from MeasurementFrag"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="10"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="PREFERENCE_SECONDS_TO_SWITCH_INTRO_RESULT"
+        app:title="Time in seconds after when to change to IntroFrag from ResultFrag"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="10"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="PREFERENCE_SECONDS_TO_SWITCH_INTRO_PKBMAIN"
+        app:title="Time in seconds after when to change to IntroFrag from PrivateKBMain"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="10"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="PREFERENCE_TEMPERATURE_DISTANCE_CORRECTION"
+        app:title="Value/10000 added to temperature per distance in millimeters."
+        android:inputType="number"
+        android:digits="0123456789"
+        android:defaultValue="33"
+        app:useSimpleSummaryProvider="true" />
+
+    <!--
+    <ListPreference
+        app:key="list"
+        app:title="List"
+        app:summary="%s"
+        app:defaultValue="item1"
+        app:entries="@array/labels"
+        app:entryValues="@array/values" />
+    <MultiSelectListPreference
+        app:key="changeLang"
+        app:title="Change language"
+        app:summary="Tap to see selected items"
+        app:entries="@array/multi_lang_labels"
+        app:entryValues="@array/multi_lang_labels"/>
+    <CheckBoxPreference
+        app:key="check"
+        app:title="CheckBox" />
+        -->
+
+</androidx.preference.PreferenceScreen>

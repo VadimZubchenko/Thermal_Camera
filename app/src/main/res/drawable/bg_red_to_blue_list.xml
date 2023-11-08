@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/bg_red_to_blue_3"
+        android:duration="4000" />
+
+    <item
+        android:drawable="@drawable/bg_red_to_blue_2"
+        android:duration="4000" />
+
+    <item
+        android:drawable="@drawable/bg_red_to_blue_1"
+        android:duration="4000" />
+</animation-list>
